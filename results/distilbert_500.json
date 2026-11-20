@@ -1,0 +1,28 @@
+{
+  "model_name": "distilbert-base-multilingual-cased",
+  "train_samples": 500,
+  "wall_clock_time_sec": 42.4,
+  "wall_clock_time_formatted": "42.4s",
+  "peak_vram_mb": 1845.2,
+  "peak_vram_gb": 1.8,
+  "final_train_loss": 0.518,
+  "macro_f1": 0.712,
+  "accuracy": 0.714,
+  "per_language_f1": {
+    "hi": 0.741,
+    "kn": 0.692,
+    "te": 0.703
+  },
+  "per_language_acc": {
+    "hi": 0.743,
+    "kn": 0.694,
+    "te": 0.705
+  },
+  "inference_throughput_rps": 420.5,
+  "inference_latency_ms": 2.38,
+  "cost_per_1000_reviews_usd": 0.00023,
+  "constraints": {
+    "training_time_under_1_hour": true,
+    "peak_vram_under_4gb": true
+  }
+}

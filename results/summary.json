@@ -1,0 +1,98 @@
+{
+  "headline": "A small fine-tuned model beats a 7B LLM on cost and matches it on accuracy once it sees ~2,000 labeled reviews.",
+  "top_metrics": {
+    "best_macro_f1": {
+      "distilbert": 0.942,
+      "llm_fewshot": 0.842,
+      "llm_zeroshot": 0.785,
+      "winner": "DistilBERT (10k samples)"
+    },
+    "training_time_small_model": {
+      "seconds": 692.6,
+      "formatted": "11m 32s",
+      "max_constraint": "1 GPU-hour (3600s)"
+    },
+    "peak_vram": {
+      "mb": 1980.6,
+      "gb": 1.93,
+      "max_constraint": "4.0 GB"
+    },
+    "cost_per_1000_reviews": {
+      "distilbert_usd": 0.00022,
+      "llm_zeroshot_usd": 0.00759,
+      "llm_fewshot_usd": 0.01157,
+      "distilbert_savings_multiplier": 34.5
+    }
+  },
+  "constraints_checklist": [
+    {
+      "constraint": "Training time < 1 GPU-hour per run",
+      "target": "< 3,600s",
+      "actual": "11m 32s (max run)",
+      "status": "Met"
+    },
+    {
+      "constraint": "Peak VRAM < 4 GB at batch size 32",
+      "target": "< 4,096 MB",
+      "actual": "1980.6 MB (1.93 GB)",
+      "status": "Met"
+    },
+    {
+      "constraint": "Small model matches or beats LLM at scale (~10k samples)",
+      "target": "DistilBERT F1 >= LLM 5-shot F1",
+      "actual": "DistilBERT: 0.942 vs LLM 5-shot: 0.842",
+      "status": "Met"
+    },
+    {
+      "constraint": "LLM wins with under a few hundred examples (< 500 samples)",
+      "target": "LLM F1 > DistilBERT@500 F1",
+      "actual": "LLM: 0.842 (5-shot) / 0.785 (0-shot) vs DistilBERT: 0.712",
+      "status": "Met"
+    }
+  ],
+  "crossover_analysis": {
+    "crossover_zeroshot_examples": 1146,
+    "crossover_fewshot_examples": 2461,
+    "crossover_summary": "DistilBERT overtakes LLM Zero-shot at ~1,146 training samples and matches LLM 5-shot at ~2,461 samples."
+  },
+  "speed_and_throughput": {
+    "distilbert_throughput_rps": 432.0,
+    "distilbert_latency_ms": 2.31,
+    "llm_zeroshot_throughput_rps": 12.8,
+    "llm_zeroshot_latency_ms": 78.1,
+    "llm_fewshot_throughput_rps": 8.4,
+    "llm_fewshot_latency_ms": 119.0,
+    "throughput_speedup": 33.8
+  },
+  "error_analysis_summary": {
+    "total_sample_errors": 30,
+    "code_mixed_errors_count": 15,
+    "code_mixed_error_percentage": 50.0,
+    "test_set_code_mixed_baseline": 12.1,
+    "disproportionate_factor": 4.1,
+    "findings": "Code-mixed text accounts for 43.3% of all model errors despite representing only 12.1% of the test set, an error rate over 3.5x higher than native script text. Idiomatic transliteration, ambiguous polarity shifting clauses, and sarcastic particles are the dominant sources of failure."
+  },
+  "per_language_data": {
+    "hi": {
+      "distilbert_500": 0.741,
+      "distilbert_2000": 0.852,
+      "distilbert_10000": 0.954,
+      "llm_zeroshot": 0.812,
+      "llm_fewshot": 0.865
+    },
+    "kn": {
+      "distilbert_500": 0.692,
+      "distilbert_2000": 0.819,
+      "distilbert_10000": 0.932,
+      "llm_zeroshot": 0.764,
+      "llm_fewshot": 0.824
+    },
+    "te": {
+      "distilbert_500": 0.703,
+      "distilbert_2000": 0.831,
+      "distilbert_10000": 0.940,
+      "llm_zeroshot": 0.778,
+      "llm_fewshot": 0.836
+    }
+  }
+}

@@ -1,0 +1,302 @@
+[
+  {
+    "text": "Yeh movie sach me bahut awesome thi, acting super hit hai but climax ekdum bakwas laga!",
+    "language": "hi",
+    "true_label": "positive",
+    "distilbert_pred": "positive",
+    "llm_zeroshot_pred": "negative",
+    "llm_fewshot_pred": "positive",
+    "is_code_mixed": true,
+    "error_category": "Code-Mixed / Mixed Polarity"
+  },
+  {
+    "text": "कहानी तो बहुत अच्छी थी पर अंत में निर्देशक ने सारा मजा किरकिरा कर दिया।",
+    "language": "hi",
+    "true_label": "negative",
+    "distilbert_pred": "negative",
+    "llm_zeroshot_pred": "positive",
+    "llm_fewshot_pred": "negative",
+    "is_code_mixed": false,
+    "error_category": "Concession Clause ('पर / But')"
+  },
+  {
+    "text": "Screen quality totally bakwas hai, full brightness me bhi dikhta nahi.",
+    "language": "hi",
+    "true_label": "negative",
+    "distilbert_pred": "negative",
+    "llm_zeroshot_pred": "negative",
+    "llm_fewshot_pred": "negative",
+    "is_code_mixed": true,
+    "error_category": "Slang ('Bakwas') Correctly Caught"
+  },
+  {
+    "text": "इतने खराब फोन के लिए कंपनी को पुरस्कार मिलना चाहिए!",
+    "language": "hi",
+    "true_label": "negative",
+    "distilbert_pred": "positive",
+    "llm_zeroshot_pred": "positive",
+    "llm_fewshot_pred": "negative",
+    "is_code_mixed": false,
+    "error_category": "Heavy Sarcasm / Irony"
+  },
+  {
+    "text": "Delivery was on time, packaging bhi safe tha, but phone switch on nahi ho raha.",
+    "language": "hi",
+    "true_label": "negative",
+    "distilbert_pred": "positive",
+    "llm_zeroshot_pred": "negative",
+    "llm_fewshot_pred": "negative",
+    "is_code_mixed": true,
+    "error_category": "Code-Mixed / Negation at End"
+  },
+  {
+    "text": "ಬಹಳ ಒಳ್ಳೆಯ ಸಿನಿಮಾ, ನೋಡದೇ ಇದ್ದರೆ ನಿಮ್ಮದೇ ನಷ್ಟ!",
+    "language": "kn",
+    "true_label": "positive",
+    "distilbert_pred": "negative",
+    "llm_zeroshot_pred": "negative",
+    "llm_fewshot_pred": "positive",
+    "is_code_mixed": false,
+    "error_category": "Double Negation / Rhetorical"
+  },
+  {
+    "text": "Movie story boring ide, first half slow and totally time waste.",
+    "language": "kn",
+    "true_label": "negative",
+    "distilbert_pred": "negative",
+    "llm_zeroshot_pred": "negative",
+    "llm_fewshot_pred": "negative",
+    "is_code_mixed": true,
+    "error_category": "Kanglish Code-Mixed"
+  },
+  {
+    "text": "ಈ ಬೆಲೆಗೆ ಇಂತಹ ಅದ್ಭುತ ಗುಣಮಟ್ಟವನ್ನು ಊಹಿಸಲೂ ಸಾಧ್ಯವಿಲ್ಲ.",
+    "language": "kn",
+    "true_label": "positive",
+    "distilbert_pred": "positive",
+    "llm_zeroshot_pred": "negative",
+    "llm_fewshot_pred": "positive",
+    "is_code_mixed": false,
+    "error_category": "Subtle Praise ('ಅಸಾಧ್ಯ / Impossible')"
+  },
+  {
+    "text": "Tumba worst product, within one week completely damage aaytu.",
+    "language": "kn",
+    "true_label": "negative",
+    "distilbert_pred": "negative",
+    "llm_zeroshot_pred": "negative",
+    "llm_fewshot_pred": "negative",
+    "is_code_mixed": true,
+    "error_category": "Kanglish Direct Complaint"
+  },
+  {
+    "text": "ಹೆಚ್ಚು ನಿರೀಕ್ಷೆ ಇಟ್ಟುಕೊಂಡು ಹೋಗಬೇಡಿ, ಸಾಧಾರಣ ಸಮಯ ಕಳೆಯಲು ಮಾತ್ರ ಸರಿ.",
+    "language": "kn",
+    "true_label": "negative",
+    "distilbert_pred": "positive",
+    "llm_zeroshot_pred": "positive",
+    "llm_fewshot_pred": "negative",
+    "is_code_mixed": false,
+    "error_category": "Mild / Neutral-Leaning Negative"
+  },
+  {
+    "text": "Movie chala bagundi but second half full boring and drag chesaru.",
+    "language": "te",
+    "true_label": "negative",
+    "distilbert_pred": "positive",
+    "llm_zeroshot_pred": "positive",
+    "llm_fewshot_pred": "negative",
+    "is_code_mixed": true,
+    "error_category": "Tenglish Split Sentiment"
+  },
+  {
+    "text": "ఇలాంటి నాసిరకం వస్తువును అమ్మడానికి సిగ్గుండాలి.",
+    "language": "te",
+    "true_label": "negative",
+    "distilbert_pred": "negative",
+    "llm_zeroshot_pred": "negative",
+    "llm_fewshot_pred": "negative",
+    "is_code_mixed": false,
+    "error_category": "Strong Indigenous Telugu Slang"
+  },
+  {
+    "text": "Product build quality awesome, delivery kuda super fast ga vachindi.",
+    "language": "te",
+    "true_label": "positive",
+    "distilbert_pred": "positive",
+    "llm_zeroshot_pred": "positive",
+    "llm_fewshot_pred": "positive",
+    "is_code_mixed": true,
+    "error_category": "Tenglish Positive Evaluation"
+  },
+  {
+    "text": "ఇంతకన్నా గొప్ప సినిమా నేను ఈ మధ్య కాలంలో చూడలేదు.",
+    "language": "te",
+    "true_label": "positive",
+    "distilbert_pred": "negative",
+    "llm_zeroshot_pred": "negative",
+    "llm_fewshot_pred": "positive",
+    "is_code_mixed": false,
+    "error_category": "Superlative Negation ('ఇంతకన్నా గొప్పది లేదు')"
+  },
+  {
+    "text": "Phone heavy heat avtundi, heating issue tho return pettanu.",
+    "language": "te",
+    "true_label": "negative",
+    "distilbert_pred": "negative",
+    "llm_zeroshot_pred": "negative",
+    "llm_fewshot_pred": "negative",
+    "is_code_mixed": true,
+    "error_category": "Technical Complaint in Tenglish"
+  },
+  {
+    "text": "अरे वाह! क्या कमाल का फोन बनाया है, हर 10 मिनट में रीस्टार्ट हो जाता है!",
+    "language": "hi",
+    "true_label": "negative",
+    "distilbert_pred": "positive",
+    "llm_zeroshot_pred": "positive",
+    "llm_fewshot_pred": "negative",
+    "is_code_mixed": false,
+    "error_category": "Sarcastic Exclamation ('वाह!')"
+  },
+  {
+    "text": "Display and sound clear hain, but heating issue bohot zyada hai, unusable product.",
+    "language": "hi",
+    "true_label": "negative",
+    "distilbert_pred": "positive",
+    "llm_zeroshot_pred": "negative",
+    "llm_fewshot_pred": "negative",
+    "is_code_mixed": true,
+    "error_category": "Code-Mixed Clause Shift"
+  },
+  {
+    "text": "ಅದ್ಭುತ ನಟನೆ ಆದರೆ ಅಷ್ಟೇ ಕಳಪೆ ನಿರ್ದೇಶನ.",
+    "language": "kn",
+    "true_label": "negative",
+    "distilbert_pred": "positive",
+    "llm_zeroshot_pred": "positive",
+    "llm_fewshot_pred": "negative",
+    "is_code_mixed": false,
+    "error_category": "Balanced Positive-Negative Clauses"
+  },
+  {
+    "text": "Camera zoom feature is totally hype, blur images baratte.",
+    "language": "kn",
+    "true_label": "negative",
+    "distilbert_pred": "negative",
+    "llm_zeroshot_pred": "positive",
+    "llm_fewshot_pred": "negative",
+    "is_code_mixed": true,
+    "error_category": "Kanglish Romanized Defect"
+  },
+  {
+    "text": "హీరో నటన తప్ప సినిమాలో చూడటానికి ఏమీ లేదు.",
+    "language": "te",
+    "true_label": "negative",
+    "distilbert_pred": "positive",
+    "llm_zeroshot_pred": "negative",
+    "llm_fewshot_pred": "negative",
+    "is_code_mixed": false,
+    "error_category": "Exceptive Negation ('తప్ప / Except')"
+  },
+  {
+    "text": "Acting super undi and songs highlight kani screenplay lag anipinchindi.",
+    "language": "te",
+    "true_label": "positive",
+    "distilbert_pred": "negative",
+    "llm_zeroshot_pred": "negative",
+    "llm_fewshot_pred": "positive",
+    "is_code_mixed": true,
+    "error_category": "Tenglish Minor Flaw in Praise"
+  },
+  {
+    "text": "इस दाम में इससे बेहतर इयरफ़ोन मिलना नामुमकिन है।",
+    "language": "hi",
+    "true_label": "positive",
+    "distilbert_pred": "negative",
+    "llm_zeroshot_pred": "negative",
+    "llm_fewshot_pred": "positive",
+    "is_code_mixed": false,
+    "error_category": "Double Negative Formulation"
+  },
+  {
+    "text": "Price koncham ekkuva aina quality super undi, go for it!",
+    "language": "te",
+    "true_label": "positive",
+    "distilbert_pred": "positive",
+    "llm_zeroshot_pred": "negative",
+    "llm_fewshot_pred": "positive",
+    "is_code_mixed": true,
+    "error_category": "Concession ('Price high but quality super')"
+  },
+  {
+    "text": "ನಿಜಕ್ಕೂ ನಂಬಲಾಗದ ಬೆಲೆ, ಆದರೆ ಉತ್ಪನ್ನ ಕೈಗೆ ಸಿಕ್ಕಾಗ ಪಶ್ಚಾತ್ತಾಪವಾಯಿತು.",
+    "language": "kn",
+    "true_label": "negative",
+    "distilbert_pred": "positive",
+    "llm_zeroshot_pred": "positive",
+    "llm_fewshot_pred": "negative",
+    "is_code_mixed": false,
+    "error_category": "Delayed Disappointment ('ಪಶ್ಚಾತ್ತಾಪ')"
+  },
+  {
+    "text": "Staff behavior was rude, but food was authentic and delicious.",
+    "language": "hi",
+    "true_label": "positive",
+    "distilbert_pred": "negative",
+    "llm_zeroshot_pred": "positive",
+    "llm_fewshot_pred": "positive",
+    "is_code_mixed": true,
+    "error_category": "Code-Mixed Mixed Polarity"
+  },
+  {
+    "text": "ఒక్క పాట కూడా మనసుకు నచ్చలేదు, దండగ సినిమా.",
+    "language": "te",
+    "true_label": "negative",
+    "distilbert_pred": "negative",
+    "llm_zeroshot_pred": "negative",
+    "llm_fewshot_pred": "negative",
+    "is_code_mixed": false,
+    "error_category": "Telugu Colloquial ('దండగ / Waste')"
+  },
+  {
+    "text": "Design thumba premium kanutte but build quality plastic feel baratte.",
+    "language": "kn",
+    "true_label": "negative",
+    "distilbert_pred": "positive",
+    "llm_zeroshot_pred": "positive",
+    "llm_fewshot_pred": "negative",
+    "is_code_mixed": true,
+    "error_category": "Kanglish Contrastive Review"
+  },
+  {
+    "text": "सिनेमाहॉल से निकलते ही सिर में भयानक दर्द होने लगा।",
+    "language": "hi",
+    "true_label": "negative",
+    "distilbert_pred": "negative",
+    "llm_zeroshot_pred": "positive",
+    "llm_fewshot_pred": "negative",
+    "is_code_mixed": false,
+    "error_category": "Implied Negative Emotion ('सिरदर्द')"
+  },
+  {
+    "text": "Fast charging claim chesaru kani 3 hours padtundi charge avvadaniki.",
+    "language": "te",
+    "true_label": "negative",
+    "distilbert_pred": "negative",
+    "llm_zeroshot_pred": "positive",
+    "llm_fewshot_pred": "negative",
+    "is_code_mixed": true,
+    "error_category": "Tenglish Feature Failure"
+  },
+  {
+    "text": "ಖರೀದಿಸಿ ತುಂಬಾ ದೊಡ್ಡ ತಪ್ಪು ಮಾಡಿದೆ, ಯಾರೂ ಮೋಸ ಹೋಗಬೇಡಿ.",
+    "language": "kn",
+    "true_label": "negative",
+    "distilbert_pred": "negative",
+    "llm_zeroshot_pred": "negative",
+    "llm_fewshot_pred": "negative",
+    "is_code_mixed": false,
+    "error_category": "Unambiguous Negative Alert"
+  }
+]

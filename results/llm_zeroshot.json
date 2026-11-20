@@ -1,0 +1,26 @@
+{
+  "model_name": "Qwen/Qwen2.5-7B-Instruct",
+  "quantization": "4-bit (bitsandbytes NF4)",
+  "condition": "zero-shot",
+  "system_prompt": "You are an expert sentiment classifier for Indian languages (Hindi, Kannada, Telugu). Given a user review, classify its sentiment as either 'positive' or 'negative'. Reply with ONLY the single word 'positive' or 'negative'.",
+  "total_evaluated": 2500,
+  "macro_f1": 0.785,
+  "accuracy": 0.788,
+  "per_language_f1": {
+    "hi": 0.812,
+    "kn": 0.764,
+    "te": 0.778
+  },
+  "per_language_acc": {
+    "hi": 0.815,
+    "kn": 0.767,
+    "te": 0.781
+  },
+  "inference_throughput_rps": 12.8,
+  "inference_latency_ms": 78.1,
+  "total_wall_clock_sec": 195.3,
+  "gpu_hourly_cost_usd": 0.35,
+  "cost_per_1000_reviews_usd": 0.00759,
+  "retry_count": 31,
+  "retry_rate": 0.0124
+}
